@@ -1,3 +1,5 @@
+package tmsdbPackage;
+
 public class Assistant {
 
     private String name;
