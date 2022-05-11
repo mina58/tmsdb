@@ -1,16 +1,16 @@
+package quizPackage;
+
 public class Question {
 
     private String question;
     private String[] choices = new String[4];
-    private char ans;
 
-    public Question(String question, String choice1, String choice2, String choice3, String choice4, char ans) {
+    public Question(String question, String choice1, String choice2, String choice3, String choice4) {
         this.question = question;
         choices[0] = choice1;
         choices[1] = choice2;
         choices[2] = choice3;
         choices[3] = choice4;
-        this.ans = ans;
     }
 
     @Override

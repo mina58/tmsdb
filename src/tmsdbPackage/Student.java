@@ -1,3 +1,5 @@
+package tmsdbPackage;
+
 public class Student {
     private String name;
     private int id;
@@ -49,9 +51,19 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Name: " + name +
-                "\nID: " + id +
-                "\nStudent Number: " + studentNumber +
-                "\nParent Number: " + parentNumber;
+        if(grp == null){
+            return "Name: " + name +
+                    "\nID: " + id +
+                    "\nStudent Number: " + studentNumber +
+                    "\nParent Number: " + parentNumber;
+        }
+        else{
+            return "Name: " + name +
+                    "\nID: " + id +
+                    "\nStudent Number: " + studentNumber +
+                    "\nParent Number: " + parentNumber +
+                    "\nGroup: " + grp;
+        }
+
     }
 }
